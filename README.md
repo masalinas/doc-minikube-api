@@ -9,10 +9,22 @@ The easiest way to access the Kubernetes API with when running minikube is to us
 kubectl proxy --port=8080
 ```
 
-You can then access the API with
+You can then access the API from other termninal
 
 ```
 curl http://localhost:8080/api/
+{
+  "kind": "APIVersions",
+  "versions": [
+    "v1"
+  ],
+  "serverAddressByClientCIDRs": [
+    {
+      "clientCIDR": "0.0.0.0/0",
+      "serverAddress": "192.168.49.2:8443"
+    }
+  ]
+}
 ```
 
 This also allows you to browse the API in your browser. Start minikube using
