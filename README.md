@@ -210,6 +210,6 @@ curl --cacert ~/.minikube/ca.crt --cert ~/.minikube/profiles/minikube/client.crt
 
 ## Some links
 
-[kubernetens-api](https://iximiuz.com/en/posts/kubernetes-api-call-simple-http-client/): How To Call Kubernetes API using Simple HTTP Client.
+[kubernetes-api](https://iximiuz.com/en/posts/kubernetes-api-call-simple-http-client/): How To Call Kubernetes API using Simple HTTP Client.
 
 
