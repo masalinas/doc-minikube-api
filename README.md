@@ -1,9 +1,9 @@
 # Description
 Minikube API Server
 
-# Get all namespaces from kubernetes server
+## Some samples
 
-You must use the the ca certificate and client key certificates created by minikube when star the first time like this:
+Get all namespaces from kubernetes server. You must use the the ca certificate and client key certificates created by minikube when star the first time like this:
 
 ```
 curl --cacert ~/.minikube/ca.crt --cert ~/.minikube/profiles/minikube/client.crt --key ~/.minikube/profiles/minikube/client.key https://127.0.0.1:32769/api/v1/namespaces
