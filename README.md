@@ -3,13 +3,13 @@ Minikube API Server
 
 ## Using proxy. Activate API swagger
 
-The easiest way to access the Kubernetes API with when running minikube is to use
+The easiest way to access the Kubernetes API with when running minikube is to use a proxy to the non tls port 8000 like this:
 
 ```
 kubectl proxy --port=8080
 ```
 
-You can then access the API from other termninal
+then you can then access the API from other terminal
 
 ```
 curl http://localhost:8080/api/
