@@ -1,6 +1,27 @@
 # Description
 Minikube API Server
 
+## Activate API swagger
+
+The easiest way to access the Kubernetes API with when running minikube is to use
+
+```
+kubectl proxy --port=8080
+```
+
+You can then access the API with
+
+```
+curl http://localhost:8080/api/
+```
+
+This also allows you to browse the API in your browser. Start minikube using
+```
+minikube start --extra-config=apiserver.Features.EnableSwaggerUI=true
+```
+
+then start kubectl proxy, and navigate to http://localhost:8080/swagger-ui/ 
+
 ## Some samples
 
 Get all namespaces from kubernetes server. You must use the the ca certificate and client key certificates created by minikube when star the first time like this:
